@@ -1,0 +1,122 @@
+[
+    {
+      "id": 1,
+      "question": "¿Sabes cuál será el resultado de este código?",
+      "code": "console.log(typeof null);",
+      "answers": [
+        "object",
+        "null",
+        "undefined",
+        "number"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 2,
+      "question": "¿Puedes adivinar el resultado?",
+      "code": "let a = [1, 2, 3];\nlet b = a;\nb.push(4);\nconsole.log(a);",
+      "answers": [
+        "[1, 2, 3]",
+        "[1, 2, 3, 4]",
+        "[4, 1, 2, 3]",
+        "[1, 2]"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 3,
+      "question": "¿Cuál es la salida del siguiente código?",
+      "code": "function test() {\n  console.log(this);\n}\ntest();",
+      "answers": [
+        "null",
+        "undefined",
+        "global object (window in browsers)",
+        "test function"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 4,
+      "question": "¿Puedes adivinar el resultado?",
+      "code": "let x = 5;\nlet y = x++;\nconsole.log(y);",
+      "answers": [
+        "5",
+        "6",
+        "undefined",
+        "Error"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 5,
+      "question": "¿Sabes cuál será el resultado de este código?",
+      "code": "console.log(0.1 + 0.2 === 0.3);",
+      "answers": [
+        "true",
+        "false",
+        "undefined",
+        "Error"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 6,
+      "question": "¿Cuál es la salida del siguiente código?",
+      "code": "let x = 10;\nif (x > 5) {\n  x = 20;\n}\nconsole.log(x);",
+      "answers": [
+        "10",
+        "5",
+        "20",
+        "undefined"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 7,
+      "question": "¿Puedes adivinar el resultado?",
+      "code": "console.log([] + []);",
+      "answers": [
+        "[]",
+        "\"\"",
+        "undefined",
+        "null"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 8,
+      "question": "¿Sabes cuál será el resultado de este código?",
+      "code": "let foo = function bar() { return 12; };\nconsole.log(typeof bar);",
+      "answers": [
+        "function",
+        "undefined",
+        "number",
+        "Error"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 9,
+      "question": "¿Cuál es la salida del siguiente código?",
+      "code": "console.log(1 + '2' + '2');",
+      "answers": [
+        "122",
+        "32",
+        "14",
+        "NaN"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 10,
+      "question": "¿Puedes adivinar el resultado?",
+      "code": "let a = 0;\nconsole.log(a++);\nconsole.log(a);",
+      "answers": [
+        "1 0",
+        "1 1",
+        "0 0",
+        "0 1"
+      ],
+      "correctAnswer": 3
+    }
+  ]
