@@ -1,24 +1,9 @@
 import { Radio, RadioGroup } from "@headlessui/react";
 import { CheckCircleIcon, XCircleIcon } from "@heroicons/react/24/solid";
-import { useQuestionStore } from "../store/question";
+
 import { type Question as QuestionType } from "../types";
-
-const getBackgroundColor = (info: QuestionType, index: number) => {
-  const { userSelectedAnswer, correctAnswer } = info;
-
-  if (
-    userSelectedAnswer == null ||
-    (index !== correctAnswer && index !== userSelectedAnswer)
-  ) {
-    return "bg-white/10";
-  }
-
-  if (index == correctAnswer) {
-    return "bg-green-600 bg-opacity-20";
-  }
-
-  if (index == userSelectedAnswer) return "bg-red-600 bg-opacity-20";
-};
+import { useQuestionStore } from "../store/question";
+import { getBackgroundColor } from "../lib/utils";
 
 export default function Question({ info }: { info: QuestionType }) {
   const selectAnswer = useQuestionStore((state) => state.selectAnswer);
