@@ -70,10 +70,10 @@ export default function Game() {
 
       <div className="mx-auto w-full max-w-lg pr-2 pt-2 text-end">
         <span
-          className="cursor-pointer text-sm opacity-95 transition-colors hover:text-gray-300"
+          className="cursor-pointer text-sm font-medium opacity-95 transition-colors hover:text-gray-300"
           onClick={() => reset()}
         >
-          Volver a jugar ↺
+          Reiniciar juego ↺
         </span>
       </div>
     </div>

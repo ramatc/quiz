@@ -12,6 +12,26 @@ import { useQuestionStore } from "../store/question";
 import GitHubIcon from "../icons/github";
 import LinkedInIcon from "../icons/linkedin";
 import MailIcon from "../icons/mail";
+import GlobeIcon from "../icons/globe";
+
+const LINKS = [
+  {
+    url: "https://www.linkedin.com/in/ramiro-tanquias/",
+    icon: <LinkedInIcon />,
+  },
+  {
+    url: "https://github.com/ramatc",
+    icon: <GitHubIcon />,
+  },
+  {
+    url: "https://ramatc.vercel.app/",
+    icon: <GlobeIcon />,
+  },
+  {
+    url: "mailto:rtanquiascornejo@gmail.com",
+    icon: <MailIcon />,
+  },
+];
 
 export default function Score() {
   const [isOpen, setIsOpen] = useState(false);
@@ -63,8 +83,8 @@ export default function Score() {
                     {((correct / length) * 100).toFixed()}%)
                   </DialogTitle>
                   <p className="mt-2 text-sm text-white/70">
-                    ¡Muchas gracias por jugar! ¿Te gustó el cuestionario? ¿Tenés
-                    alguna sugerencia?
+                    ¡Muchas gracias por jugar! ¿Te gustó el Quiz? ¿Tenés alguna
+                    sugerencia?
                   </p>
                   <p className="mt-2 text-sm text-white/70">
                     Encontrá mis enlaces a redes sociales y mi correo
@@ -72,30 +92,18 @@ export default function Score() {
                   </p>
                   <div className="flex flex-wrap items-center justify-between">
                     <div className="mt-4 flex flex-wrap gap-3">
-                      <a
-                        href="https://www.linkedin.com/in/ramiro-tanquias/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-gray-400 transition-all hover:text-gray-300"
-                      >
-                        <LinkedInIcon />
-                      </a>
-                      <a
-                        href="https://github.com/ramatc"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-gray-400 transition-all hover:text-gray-300"
-                      >
-                        <GitHubIcon />
-                      </a>
-                      <a
-                        href="mailto:rtanquiascornejo@gmail.com"
-                        className="text-gray-400 transition-all hover:text-gray-300"
-                      >
-                        <MailIcon />
-                      </a>
+                      {LINKS.map((link, i) => (
+                        <a
+                          href={link.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          key={i}
+                          className="text-gray-400 transition-all hover:text-gray-300"
+                        >
+                          {link.icon}
+                        </a>
+                      ))}
                     </div>
-
                     <div className="mt-4">
                       <Button
                         className="inline-flex items-center gap-2 rounded-md bg-gray-700 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-gray-600 data-[open]:bg-gray-700 data-[focus]:outline-1 data-[focus]:outline-white"

@@ -8,11 +8,14 @@ export default function Card({ language }: { language: string }) {
   };
 
   return (
-    <div className="w-52 cursor-pointer" onClick={handleClick}>
-      <img
-        src={`${language.toLocaleLowerCase()}.svg`}
-        alt={`${language} Logo`}
-      />
+    <div
+      className="w-52 transform cursor-pointer rounded-lg bg-white/5 p-5 transition-transform duration-300 hover:scale-105"
+      onClick={handleClick}
+    >
+      <i
+        className={`devicon-${language.toLocaleLowerCase()}-plain text-9xl`}
+      ></i>
+      <h3 className="mt-1">{language}</h3>
     </div>
   );
 }
