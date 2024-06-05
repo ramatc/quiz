@@ -22,7 +22,7 @@ export const useQuestionStore = create<State>()(
           currentQuestion: 0,
 
           fetchQuestions: async (limit: number, category: string) => {
-            const res = await fetch("http://localhost:5173/data.json");
+            const res = await fetch("/data.json");
             const json = await res.json();
 
             let filteredQuestions = json;
