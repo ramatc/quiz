@@ -13,9 +13,9 @@ export default function Card({ language }: { language: string }) {
       onClick={handleClick}
     >
       <i
-        className={`devicon-${language.toLocaleLowerCase()}-plain text-9xl`}
+        className={`devicon-${language.toLocaleLowerCase()}-plain text-8xl text-white sm:text-9xl`}
       ></i>
-      <h3 className="mt-1">{language}</h3>
+      <h3 className="mt-1 text-gray-300">{language}</h3>
     </div>
   );
 }

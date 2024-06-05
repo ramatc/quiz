@@ -21,8 +21,8 @@ export default function Game() {
     <div className="px-4">
       <div className="mx-auto w-full max-w-lg divide-y divide-white/5 rounded-xl bg-white/5">
         <div className="flex p-3">
-          <div className="flex-1"></div>
-          <div className="flex items-center">
+          <div className="hidden flex-1 sm:block"></div>
+          <div className="flex items-center text-white">
             <button
               onClick={goPreviousQuestion}
               disabled={currentQuestion === 0}
@@ -51,7 +51,7 @@ export default function Game() {
         </div>
 
         <Disclosure as="div" className="p-6">
-          <span className="font-medium text-white">
+          <span className="font-medium text-white md:text-lg">
             {questionInfo.question}
           </span>
           <SyntaxHighlighter
@@ -68,9 +68,9 @@ export default function Game() {
         </Disclosure>
       </div>
 
-      <div className="mx-auto w-full max-w-lg pr-2 pt-2 text-end">
+      <div className="mx-auto w-full max-w-lg pr-2 pt-2 text-center sm:text-end">
         <span
-          className="cursor-pointer text-sm font-medium opacity-95 transition-colors hover:text-gray-300"
+          className="cursor-pointer text-sm font-medium text-white opacity-95 transition-colors hover:text-gray-300"
           onClick={() => reset()}
         >
           Reiniciar juego ↺

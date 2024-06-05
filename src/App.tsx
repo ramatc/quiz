@@ -9,10 +9,10 @@ export default function App() {
 
   return (
     <main className="fade-in mx-auto min-h-screen max-w-[1250px] px-12 pb-4 pt-12 md:px-20 md:pt-20">
-      <h1 className="pb-5 text-center text-4xl font-bold text-white">
+      <h1 className="pb-5 text-center text-3xl font-bold text-white sm:text-4xl">
         Programming Quiz
       </h1>
-      <h2 className="pb-10 text-center text-xl font-normal text-yellow-100">
+      <h2 className="pb-10 text-center text-lg font-normal text-yellow-100 sm:text-xl">
         {questions.length > 0
           ? "¡Buena suerte! Responde las preguntas y demuestra tus conocimientos."
           : "¡Elegí un lenguaje y poné a prueba tus conocimientos!"}
