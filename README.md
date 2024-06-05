@@ -1,30 +1,21 @@
-# React + TypeScript + Vite
+# Programming Quiz
+Un juego para poner a prueba tus conocimientos sobre diferentes lenguajes de programación.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Programming Quiz](https://github.com/ramatc/quiz/assets/75765676/835b1c3e-08b0-456f-8ddc-0315fef66851)
 
-Currently, two official plugins are available:
+🛠 Tecnologías utilizadas:
+- React.js
+- TypeScript
+- Zustand
+- Vite
+- Tailwind CSS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🌟 Algunas características:
+- Gestión de estado mediante Zustand, ya que es ligera y permite crear stores de estado globales de forma sencilla.
+- React Syntax Highlighter para mostrar código con resaltado de sintaxis, lo que hace que el código sea más legible y atractivo visualmente.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Información de contacto:
+Puede comunicarse conmigo por correo electrónico: rtanquiascornejo@gmail.com\
+Enviarme un mensaje en LinkedIn: https://www.linkedin.com/in/ramiro-tanquias
+<br/>
+O visitar mi portfolio: https://ramatc.vercel.app
